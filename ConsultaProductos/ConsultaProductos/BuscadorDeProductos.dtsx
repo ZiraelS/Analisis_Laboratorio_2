@@ -11,28 +11,55 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="BuscadorDeProductos"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{70023AB7-C165-42E8-80C9-4F48A98E1B0A}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{A9595A4A-9204-405E-BC6E-5DD7225D2C78}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{30D6A020-BB4C-4A0F-8E97-6AFFB58B7ED9}"
-      DTS:IncludeInDebugDump="6789"
+      DTS:DTSID="{52980285-6992-46C2-9D93-89E9BE3B6926}"
+      DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
-      DTS:ObjectName="Color">
+      DTS:ObjectName="ArticuloColor">
       <DTS:VariableValue
-        DTS:DataType="5">0.</DTS:VariableValue>
+        DTS:DataType="8">Red</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{0EADA636-5165-4469-B869-B21C14B99B68}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
-      DTS:ObjectName="NumeroArticulo">
+      DTS:ObjectName="ArticuloNumero">
       <DTS:VariableValue
-        DTS:DataType="3">0</DTS:VariableValue>
+        DTS:DataType="3">721</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BB0E05E0-AC2D-4E8F-AE93-ECE35AEE34F6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ArticuloPrecio">
+      <DTS:VariableValue
+        DTS:DataType="5">1000.</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4C0B354D-1A80-4EC1-90CC-0BBCDB47C7FA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ArticuloSize">
+      <DTS:VariableValue
+        DTS:DataType="8">50</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{30D6A020-BB4C-4A0F-8E97-6AFFB58B7ED9}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Color">
+      <DTS:VariableValue
+        DTS:DataType="8">Red</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -41,7 +68,17 @@
       DTS:Namespace="User"
       DTS:ObjectName="Precio">
       <DTS:VariableValue
-        DTS:DataType="5">0.</DTS:VariableValue>
+        DTS:DataType="5">1431.5</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{18EA7ABE-1B56-4B28-AB9A-0AF1D2E557D7}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Resultado">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -50,11 +87,258 @@
       DTS:Namespace="User"
       DTS:ObjectName="Size">
       <DTS:VariableValue
-        DTS:DataType="8"
-        xml:space="preserve"></DTS:VariableValue>
+        DTS:DataType="8">56</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
-  <DTS:Executables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Concuerda"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F5C5B8CA-FE2F-4EEE-B8DE-198451250E36}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Concuerda"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Determinar si el color concuerda"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CF3C34F3-9097-4DC0-8B59-2FF0904388A0}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Determinar si el color concuerda"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Determinar si el precio es igual"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{7158E090-DC33-4C23-9FDF-A2720DBB7835}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Determinar si el precio es igual"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Determinar si el tamaño es igual"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{755827e9-074e-4b7f-9895-44510df0e007}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Determinar si el tamaño es igual"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\No Concuerda"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{a342d57b-1b0e-4c98-babe-aaa0cbf2e2e2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="No Concuerda"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Precio igual"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F053075C-1DC7-49AB-AAEB-B2CDB48C47D3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Precio igual"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Precio Mayor"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{2A2EB4CC-B1A3-472E-947B-07994BDDA369}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Precio Mayor"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Precio Menor"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{1E464E9B-0090-4BC1-B315-21ADE2FDE2F6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Precio Menor"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tamaño igual"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{028808e0-31e8-45b4-a0dc-f92339a3af28}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tamaño igual"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tamaño Mayor"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{a9ee9a9c-4695-46c4-b699-3d5df5f231f1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tamaño Mayor"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tamaño Menor"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{36b4d747-7eb7-42c9-9584-b1d4cab440f8}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tamaño Menor"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{587D3FF0-623B-4F67-BD2B-DB6225175843}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ArticuloColor] == @[User::Color]"
+      DTS:From="Package\Determinar si el color concuerda"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Concuerda" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{443FF1A7-C28E-435A-A5EB-2E659CD4D500}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ArticuloColor] != @[User::Color]"
+      DTS:From="Package\Determinar si el color concuerda"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\No Concuerda" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{2C3E069D-6945-4155-8DDF-873A602B705F}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ArticuloPrecio] == @[User::Precio]"
+      DTS:From="Package\Determinar si el precio es igual"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Precio igual" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{a30c9a77-3f0c-4eb3-a33d-8d04f0089290}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ArticuloSize]  == @[User::Size]"
+      DTS:From="Package\Determinar si el tamaño es igual"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2 1"
+      DTS:To="Package\Tamaño igual" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{0D6B7059-929C-4A26-BFDE-F9DFEDC6AF29}"
+      DTS:EvalOp="3"
+      DTS:Expression="@[User::ArticuloPrecio] &lt;= @[User::Precio]"
+      DTS:From="Package\Determinar si el precio es igual"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Precio Mayor" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{c70dafd1-3dc4-4186-a7fe-37601b03bf10}"
+      DTS:EvalOp="3"
+      DTS:Expression="@[User::ArticuloSize]  &lt;= @[User::Size]"
+      DTS:From="Package\Determinar si el tamaño es igual"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3 1"
+      DTS:To="Package\Tamaño Mayor" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{EBC96EBB-76DD-422E-AE4F-0619FA2BAB78}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ArticuloPrecio] &gt;= @[User::Precio]"
+      DTS:From="Package\Determinar si el precio es igual"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Precio Menor" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{2ac99cec-ba80-43db-b19b-3363fa168145}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::ArticuloSize]  &gt;= @[User::Size]"
+      DTS:From="Package\Determinar si el tamaño es igual"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4 1"
+      DTS:To="Package\Tamaño Menor" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -62,5 +346,321 @@
 <Objects
   Version="8">
   <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="232,42"
+          Id="Package\Determinar si el color concuerda"
+          TopLeft="367,50" />
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Concuerda"
+          TopLeft="170.25,153" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="445.666666666667,92">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-210.916666666667,61"
+              Start="0,0"
+              End="-210.916666666667,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.6506849315068" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.6506849315068"
+                    Point2="0,24.6506849315068"
+                    Point3="-4,24.6506849315068" />
+                  <mssgle:LineSegment
+                    End="-206.916666666667,24.6506849315068" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-206.916666666667,24.6506849315068"
+                    Point2="-210.916666666667,24.6506849315068"
+                    Point3="-210.916666666667,28.6506849315068" />
+                  <mssgle:LineSegment
+                    End="-210.916666666667,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-113.458333333333,29.6506849315068,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="145,42"
+          Id="Package\No Concuerda"
+          TopLeft="652.75,153" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="520.333333333333,92">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="204.916666666667,61"
+              Start="0,0"
+              End="204.916666666667,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.6506849315069" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.6506849315069"
+                    Point2="0,24.6506849315069"
+                    Point3="4,24.6506849315069" />
+                  <mssgle:LineSegment
+                    End="200.916666666667,24.6506849315069" />
+                  <mssgle:CubicBezierSegment
+                    Point1="200.916666666667,24.6506849315069"
+                    Point2="204.916666666667,24.6506849315069"
+                    Point3="204.916666666667,28.6506849315069" />
+                  <mssgle:LineSegment
+                    End="204.916666666667,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="94.4583333333334,29.6506849315069,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="225,42"
+          Id="Package\Determinar si el precio es igual"
+          TopLeft="375.5,307" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Precio igual"
+          TopLeft="178,435.25" />
+        <NodeLayout
+          Size="140,42"
+          Id="Package\Precio Mayor"
+          TopLeft="422.5,438.75" />
+        <NodeLayout
+          Size="140,42"
+          Id="Package\Precio Menor"
+          TopLeft="651.25,437.25" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="433.75,349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-189.25,86.25"
+              Start="0,0"
+              End="-189.25,78.75">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.4234992679356" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.4234992679356"
+                    Point2="0,29.4234992679356"
+                    Point3="-4,29.4234992679356" />
+                  <mssgle:LineSegment
+                    End="-185.25,29.4234992679356" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-185.25,29.4234992679356"
+                    Point2="-189.25,29.4234992679356"
+                    Point3="-189.25,33.4234992679356" />
+                  <mssgle:LineSegment
+                    End="-189.25,78.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-102.625,34.4234992679356,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="490.25,349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,89.75"
+              Start="0,0"
+              End="0,82.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,82.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,33.125,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="542.25,349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="179,88.25"
+              Start="0,0"
+              End="179,80.75">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.1057833089312" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.1057833089312"
+                    Point2="0,30.1057833089312"
+                    Point3="4,30.1057833089312" />
+                  <mssgle:LineSegment
+                    End="175,30.1057833089312" />
+                  <mssgle:CubicBezierSegment
+                    Point1="175,30.1057833089312"
+                    Point2="179,30.1057833089312"
+                    Point3="179,34.1057833089312" />
+                  <mssgle:LineSegment
+                    End="179,80.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="81.5,35.1057833089312,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="232,42"
+          Id="Package\Determinar si el tamaño es igual"
+          TopLeft="371,612.25" />
+        <NodeLayout
+          Size="143,42"
+          Id="Package\Tamaño igual"
+          TopLeft="183.5,723" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Tamaño Mayor"
+          TopLeft="410.5,726.5" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Tamaño Menor"
+          TopLeft="630.5,725" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2 1]"
+          TopLeft="431,654.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-176,68.75"
+              Start="0,0"
+              End="-176,61.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.4375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.4375"
+                    Point2="0,23.4375"
+                    Point3="-4,23.4375" />
+                  <mssgle:LineSegment
+                    End="-172,23.4375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-172,23.4375"
+                    Point2="-176,23.4375"
+                    Point3="-176,27.4375" />
+                  <mssgle:LineSegment
+                    End="-176,61.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-96,28.4375,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3 1]"
+          TopLeft="486,654.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.25"
+              Start="0,0"
+              End="0,64.75">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,24.375,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4 1]"
+          TopLeft="543,654.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="162.5,70.75"
+              Start="0,0"
+              End="162.5,63.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.1193181818182" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.1193181818182"
+                    Point2="0,24.1193181818182"
+                    Point3="4,24.1193181818182" />
+                  <mssgle:LineSegment
+                    End="158.5,24.1193181818182" />
+                  <mssgle:CubicBezierSegment
+                    Point1="158.5,24.1193181818182"
+                    Point2="162.5,24.1193181818182"
+                    Point3="162.5,28.1193181818182" />
+                  <mssgle:LineSegment
+                    End="162.5,63.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="73.25,29.1193181818182,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
