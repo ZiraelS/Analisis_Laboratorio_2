@@ -26,26 +26,26 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">SP-LAB9-10</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA3BJOopWNUmp+B6GbOGV+QAAAAACAAAAAAADZgAAwAAAABAAAADohqulz0oPhhw56MBuAfrfAAAAAASAAACgAAAAEAAAAPRDqwtGwOIiqawSrmxgEpOIAAAAQqzoJ4rOhmpJ/wm2Y4ow4D7rwSqo35AdGJViDloaOuKToiaVMcWhkFcFRBFWDxPu6EYQEc8uj9W5T7yRw/f+7eRCNfHMlx5kKKo0HykZ8JNkqa3arnnu+SpyoBfNPSA8VM2tuGdxhrDXnLcAullW7Ns+XJIYMdOYtBBkfkrcqvyXwK77TEW42RQAAAA8kykDC1Vgl84q7P5u6dvFji6kFg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA3BJOopWNUmp+B6GbOGV+QAAAAACAAAAAAADZgAAwAAAABAAAAD4f0Ed7xxKkYoyJ+i4N6usAAAAAASAAACgAAAAEAAAAM9yenMUCXiyaeXbYR2FQBSIAAAAGIZJxzVT3H631Ku/cK1A7vFaFKdZFEHaMmDRi/VUBFAiGtaRaK4AETrw7Tuj8P2SEuiDibtrEI3rhe507WTyfzTHbyqOyL8dCWGTxzd81tsL4umJhtERoNIsoMA/caxTVAcGHLw5+5GCvJUFkW4N5nUYBEH234iFmyQdoY24yk6lL/Yipehh4RQAAAD41k6eG4IgxypdPNXqMbb1WpiJ3A==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="BuscadorDeProductos.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Package.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="BuscadorDeProductos.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{7C546681-9594-476F-953E-AB86EA7B8E0F}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{EC08C0E7-D872-4A63-9A5B-33A131B3B5B8}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">BuscadorDeProductos</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{DB58C374-4E49-48B1-BB3C-BF404A67C732}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{70023AB7-C165-42E8-80C9-4F48A98E1B0A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
